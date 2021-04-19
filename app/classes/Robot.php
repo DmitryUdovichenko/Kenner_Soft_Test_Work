@@ -1,6 +1,6 @@
 <?php
 
-abstract class Robot
+class Robot implements RobotInterface
 {
     protected $weight, $speed, $height;
     

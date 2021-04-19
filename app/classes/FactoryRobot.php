@@ -3,7 +3,7 @@ class FactoryRobot
 {
     protected $methods;
 
-    public function addType(Robot $robot)
+    public function addType(RobotInterface $robot)
     {
         $robotType = get_class($robot);
         $this->methods["create$robotType"] = $robot;

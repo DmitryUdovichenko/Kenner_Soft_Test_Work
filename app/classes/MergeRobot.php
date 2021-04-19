@@ -1,5 +1,5 @@
 <?php
-class MergeRobot extends Robot 
+class MergeRobot implements RobotInterface 
 {
     protected $robots = [];
 
@@ -9,7 +9,7 @@ class MergeRobot extends Robot
             $robots = [$robots];
         }
         foreach ($robots as $robot) {
-            if(!($robot instanceof Robot)){
+            if(!($robot instanceof RobotInterface)){
                 throw new Exception("This is not Robot");
             }
         } 
@@ -36,6 +36,5 @@ class MergeRobot extends Robot
             return $robot->getHeight();
         }, $this->robots));
     }
-
 
 }
