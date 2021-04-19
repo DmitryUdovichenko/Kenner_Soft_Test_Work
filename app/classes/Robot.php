@@ -6,15 +6,15 @@ abstract class Robot
     
     function getWeight()
     {
-        return $this->$weight;
+        return $this->weight;
     }
     function getSpeed()
     {
-        return $this->$speed;
+        return $this->speed;
     }
     function getHeight()
     {
-        return $this->$weight;
+        return $this->weight;
     }
 
 }
